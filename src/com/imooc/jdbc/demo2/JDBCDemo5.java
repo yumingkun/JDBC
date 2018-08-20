@@ -131,7 +131,7 @@ public class JDBCDemo5 {
 	/**
 	 * 保存数据
 	 */
-	public void demo1(){
+	public static void demo1(){
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		try{
@@ -156,5 +156,10 @@ public class JDBCDemo5 {
 			// 释放资源
 			JDBCUtils.release(pstmt, conn);
 		}
+	}
+
+	public static void main(String[] args) {
+		demo1();
+
 	}
 }
